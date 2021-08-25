@@ -1,10 +1,10 @@
-package br.com.elo7.test.rest;
+package br.com.elo7.test.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.elo7.test.controller.NASAMarsController;
+import br.com.elo7.test.manage.NASAMarsController;
 
 @RestController
 public class ProbeControllers {

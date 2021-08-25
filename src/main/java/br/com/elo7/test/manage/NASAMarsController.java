@@ -1,4 +1,4 @@
-package br.com.elo7.test.controller;
+package br.com.elo7.test.manage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +12,8 @@ import br.com.elo7.test.bean.Planet;
 import br.com.elo7.test.bean.Probe;
 
 /***
- * Classe respons·vel por interpretar os dados
- * e enviar as classes respons·veis
+ * Classe respons√°vel por interpretar os dados
+ * e enviar as classes respons√°veis
  * @author Susan Braun Rosa
  *
  */
@@ -23,10 +23,11 @@ public class NASAMarsController {
 	private List<Probe> listProbes;
 
 	private static final String INPUT_REGEX = 
-					"^[0-9]+\\s[0-9]+\n" 
-					+ "[[0-9]+\\s[0-9]+\\s[NSWE]{1}\\n" 
-					+ "[LMR]*]*"
+					"^[0-9]+\\s[0-9]+" 
+					+ "(\\n[0-9]+\\s[0-9]+\\s[NSWE]{1}\\n" 
+					+ "[LMR]*)*"
 					+ "$";
+	public static final String WRONG_PATTERN = "Os dados de entrada est√£o fora do padr√£o determinado";
 
 	/**
 	 * 
@@ -73,7 +74,7 @@ public class NASAMarsController {
 	}
 
 	/***
-	 * Valida se a entrada est· no formato esperado
+	 * Valida se a entrada est√° no formato esperado
 	 * @param inputData
 	 * @throws Exception
 	 */
@@ -82,8 +83,7 @@ public class NASAMarsController {
 		Matcher matcher = pattern.matcher(inputData);
 
 		if (!matcher.find()) {
-
-			throw new Exception("Os dados de entrada est„o fora do padr„o determinado");
+			throw new Exception(WRONG_PATTERN);
 		}
 	}
 

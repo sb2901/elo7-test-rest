@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import br.com.elo7.test.controller.NASAMarsController;
+import br.com.elo7.test.manage.NASAMarsController;
 /**
  * 
  * @author Susan Braun Rosa

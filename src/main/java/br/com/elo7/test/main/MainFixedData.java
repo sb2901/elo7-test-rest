@@ -1,6 +1,6 @@
 package br.com.elo7.test.main;
 
-import br.com.elo7.test.controller.NASAMarsController;
+import br.com.elo7.test.manage.NASAMarsController;
 
 public class MainFixedData {
 

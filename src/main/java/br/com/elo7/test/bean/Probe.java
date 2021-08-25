@@ -23,7 +23,7 @@ public class Probe {
 
 	/***
 	 * Move a  sonda.
-	 * Caso a sonda ultrapasse o limite do mapa a aÁ„o n„o ser· executada, ou seja,
+	 * Caso a sonda ultrapasse o limite do mapa a a√ß√£o n√£o ser√° executada, ou seja,
 	 * a sonda permanece parada
 	 */
 	private void move() {
@@ -62,7 +62,7 @@ public class Probe {
 	}
 
 	/**
-	 * Define pra qual direÁ„o a sonda deve apontar
+	 * Define pra qual dire√ß√£o a sonda deve apontar
 	 * @param action
 	 */
 	private void switchDirection(String action) {
